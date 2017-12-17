@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Form Page</title>
+    <meta name="viewport" comtent="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        function showText() {
+            var user_input = document.getElementById("user_input").value;
+            var password = document.getElementById("password").value;
+            document.write( "User name:" +user_input + "Password:" +password);
+            
+        }
+        function showcancel(){
+            document.getElementById("This");
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-inverse">
+           <div class="">
+            <div class="navbar-headeer">
+                <a class="navbar-brand">Weltok</a>
+            </div> 
+               <ul class="nav navbar-nav ">
+                   <li><a href="abc.com">Home</a></li>
+                   <li><a href="abcd.com">About Us</a></li>
+               </ul>
+           </div>
+
+        </nav>
+
+    </header>
+    <content>
+        <form>
+            <section class="container-fluid">
+                    <h1 id="boot">Login Form</h1>
+            </section>
+            <section class="container" id="This">
+                <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <label for="Text">Username</label>
+                        <input type="text" class="form-control" id="user_input">
+                    </div>
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password">
+                    </div>
+                    <button type="submit" onclick="showText();"/> Submit </button>
+                    <button onclick="showCancel">Cancel</button>
+                </div>
+                
+                </div>
+            </section>
+        </form>
+
+    </content>
+    <footer>
+
+    </footer>
+
+</body>
+</html>
