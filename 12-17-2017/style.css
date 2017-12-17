@@ -1,0 +1,15 @@
+html
+{
+    width: 100%;
+    height: 100%;
+    background: #3
+}
+function showUsername()
+{
+    console.log(document.getElementById('show'));
+    document.getElementById('show').innerHTML = document.getElementById("user_input").value;
+}
+function showPassword() {
+    console.log(document.getElementById('password'));
+    document.getElementById('password').innerHTML = document.getElementById("user_input").value;
+}
